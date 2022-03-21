@@ -1,0 +1,15 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
+    }
+}
+rootProject.name = "BleClient"
+include ':app'
+include ':domain'
+include ':ble-client'
+include ':framework'
+include ':ble-client:api'
+include ':ble-client:impl'
